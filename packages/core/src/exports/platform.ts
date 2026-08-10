@@ -170,6 +170,7 @@ export {
   createNoteIfAbsent,
   writeAsset,
   readAsset,
+  readAssetBinary,
   openAsset,
   revealAsset,
   listDir,
@@ -192,6 +193,8 @@ export {
   captureMetaFetch,
   captureSharedInboxRelay,
   promoteCaptureScreenshot,
+  readAnnotations,
+  writeAnnotations,
 } from '../graph/commands'
 export { createAsset, importAsset } from '../graph/assets'
 export { assetFileName } from '../graph/asset-names'
@@ -221,8 +224,12 @@ export {
   editorFullWidthSchema,
   sidebarWidthSchema,
   contextSidebarWidthSchema,
+  previewPanelWidthSchema,
+  annotationListHeightSchema,
   SIDEBAR_WIDTH_RANGE,
   CONTEXT_SIDEBAR_WIDTH_RANGE,
+  PREVIEW_PANEL_WIDTH_RANGE,
+  ANNOTATION_LIST_HEIGHT_RANGE,
   clampSidebarWidth,
   semanticSearchEnabledSchema,
   describeAssetsSchema,
